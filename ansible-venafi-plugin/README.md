@@ -8,7 +8,7 @@ To write your own plugin (or to test this example plugin):
 3.  From *all* AWX/Red Hat Ansible Tower nodes, install the plugin into the AWX virtualenv:
 
 ```shell
-~ awx-python -m pip install git+https://github.com/ansible/awx-custom-credential-plugin-example.git
+~ awx-python -m pip install git+https://github.com/cdmadrigal/custom-solutions/tree/main/ansible-venafi-plugin.git
 ```
 
 4.  From *any* AWX/Red Hat Ansible Tower node, run this command to register the plugin:

@@ -2,7 +2,7 @@
 #
 # Install into each Ansible Tower server with:
 # yum install -y rust python3-devel git
-# awx-python -m pip install git+https://github.com/cdmadrigal/custom-solutions/ansible-venafi-plugin
+# awx-python -m pip install git+https://github.com/cdmadrigal/custom-solutions/tree/main/ansible-venafi-plugin
 # awx-manage setup_managed_credential_types
 # ansible-tower-service restart
 #
@@ -35,7 +35,7 @@ setuptools.setup(
     long_description=long_description,
     license='Apache License 2.0',
     keywords='Ansible Venafi TPP SSH certificate',
-    url='https://github.com/cdmadrigal/custom-solutions/ansible-venafi-plugin',
+    url='https://github.com/cdmadrigal/custom-solutions/tree/main/ansible-venafi-plugin',
     packages=[package_name],
     package_dir={package_name: 'src'},
     include_package_data=True,
