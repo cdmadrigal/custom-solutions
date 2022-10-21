@@ -1,0 +1,10 @@
+pylint
+pytest
+pytest-cov
+requests
+BeautifulSoup4
+setuptools==56.2.0
+wheel
+urllib3
+Django
+vcert

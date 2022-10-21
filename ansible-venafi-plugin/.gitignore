@@ -1,0 +1,15 @@
+.venv
+**/pyvenv.cfg
+**/bin
+**/lib
+**/build
+**/dist
+**egg-info
+.DS_Store
+.vscode/settings.json
+.vscode
+**env.sh
+**/__pycache__
+.iaas-infoblox/lib64
+coverage.xml
+.coverage

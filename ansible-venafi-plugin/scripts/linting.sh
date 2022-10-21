@@ -1,0 +1,1 @@
+pylint -f colorized -r y src
