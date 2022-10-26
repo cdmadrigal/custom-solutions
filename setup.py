@@ -35,7 +35,7 @@ setuptools.setup(
     long_description=long_description,
     license='Apache License 2.0',
     keywords='Ansible Venafi TPP SSH certificate',
-    url='https://github.com/cdmadrigal/custom-solutions/tree/main/ansible-venafi-plugin',
+    url='https://github.com/cdmadrigal/custom-solutions',
     packages=[package_name],
     package_dir={package_name: 'src'},
     include_package_data=True,
