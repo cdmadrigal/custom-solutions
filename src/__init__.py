@@ -123,7 +123,7 @@ venafi_ssh_inputs = {
         },
     ],
     'required': ['url', 'username', 'password', 'cacert',
-                 'key_id', 'valid_principals', 'public_key', ],
+                 'key_id', 'valid_principals',  ],
 }
 
 def ssh_backend(**kwargs):

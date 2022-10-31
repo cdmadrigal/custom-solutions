@@ -2,7 +2,7 @@
 #
 # Install into each Ansible Tower server with:
 # yum install -y rust python3-devel git
-# awx-python -m pip install git+https://github.com/cdmadrigal/custom-solutions/tree/main/ansible-venafi-plugin
+# awx-python -m pip install git+https://github.com/cdmadrigal/custom-solutions
 # awx-manage setup_managed_credential_types
 # ansible-tower-service restart
 #
