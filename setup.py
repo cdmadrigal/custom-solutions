@@ -28,7 +28,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="ansible_venafi_plugin",
-    version="0.0.1",
+    version="0.0.2",
     author='Venafi, Inc.',
     author_email='cris.madrigal@venafi.com',
     description='Custom Ansible credential plugin to retrieve SSH certificates from Venafi TPP.',
