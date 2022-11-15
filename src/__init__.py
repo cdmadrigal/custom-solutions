@@ -151,7 +151,7 @@ def ssh_backend(**kwargs):
             url=kwargs['url'],
             user=kwargs['username'],
             password=kwargs['password'],
-            http_request_kwargs={'verify': cacert}
+            http_request_kwargs={'verify': False}
         )
 
         auth = Authentication(user=kwargs['username'], password=kwargs['password'], scope=SCOPE_SSH)
