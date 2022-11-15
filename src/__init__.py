@@ -131,15 +131,15 @@ def ssh_backend(**kwargs):
 
     client_id = kwargs.get(
         'client_id',
-        "API_IAAS"
+        "SSH_IAAS"
     )
     ca_dn = kwargs.get(
         'ca_dn',
-        "\\VED\\Certificate Authority\\SSH\\Templates\\SSH Client Template"
+        "\\VED\\Policy\\Administration\\CAs\\MSCA - Web Server (1 Year)"
     )
     policy_dn = kwargs.get(
         'policy_dn',
-        "\\VED\\Policy\\Non-Production\\Applications\\IAAS\\SSH"
+        "\\VED\\Policy\\SSH\\SSH Certificates\\Application 1"
     )
     validity_period = kwargs.get(
         'validity_period',
