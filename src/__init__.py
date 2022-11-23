@@ -62,6 +62,13 @@ venafi_ssh_inputs = {
     ],
     'metadata': [
         {
+            'id': 'ca_dn',
+            'label': 'CA DN',
+            'type': 'string',
+            'multiline': False,
+            'help_text': _('Certificate Authority DN'),
+        },
+        {
             'id': 'key_id',
             'label': 'SSH Certificate ID',
             'type': 'string',
@@ -101,13 +108,6 @@ venafi_ssh_inputs = {
             ),
         },
         {
-            'id': 'ca_dn',
-            'label': 'CA DN',
-            'type': 'string',
-            'multiline': False,
-            'help_text': _('Certificate Authority DN'),
-        },
-        {
             'id': 'policy_dn',
             'label': 'Policy DN',
             'type': 'string',
@@ -123,7 +123,7 @@ venafi_ssh_inputs = {
         },
     ],
     'required': ['url', 'username', 'password', 'cacert',
-                 'key_id', 'valid_principals',  ],
+                   ],
 }
 
 def ssh_backend(**kwargs):
@@ -135,7 +135,7 @@ def ssh_backend(**kwargs):
     )
     ca_dn = kwargs.get(
         'ca_dn',
-        "\\VED\\Policy\\Administration\\CAs\\MSCA - Web Server (1 Year)"
+        "Application 1"
     )
     policy_dn = kwargs.get(
         'policy_dn',
@@ -144,6 +144,14 @@ def ssh_backend(**kwargs):
     validity_period = kwargs.get(
         'validity_period',
         "15m"
+    )
+    validity_period = kwargs.get(
+        'key_id',
+        "admin"
+    )
+    validity_period = kwargs.get(
+        'valid_principals',
+        "admin"
     )
 
     with CertFiles(kwargs['cacert']) as cacert:
